@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-20T12:24:11 IST" name="Default suite" finished-at="2026-02-20T12:24:19 IST" duration-ms="8383">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Priv_Proc_RunnerClass.Runner@206a70ef]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-02-20T12:24:11 IST" name="Default test" finished-at="2026-02-20T12:24:19 IST" duration-ms="8383">
+      <class name="Priv_Proc_RunnerClass.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Priv_Proc_RunnerClass.Runner@206a70ef]" started-at="2026-02-20T12:24:11 IST" name="setUpClass" finished-at="2026-02-20T12:24:12 IST" duration-ms="967" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@b25b095]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Priv_Proc_RunnerClass.Runner@206a70ef]" started-at="2026-02-20T12:24:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-20T12:24:19 IST" duration-ms="7273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate bank account creation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DataTable Practice Scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Priv_Proc_RunnerClass.Runner@206a70ef]" started-at="2026-02-20T12:24:19 IST" name="tearDownClass" finished-at="2026-02-20T12:24:19 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Priv_Proc_RunnerClass.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
