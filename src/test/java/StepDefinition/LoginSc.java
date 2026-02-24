@@ -41,5 +41,6 @@ public class LoginSc {
 	public void user_should_be_successfully_logged_in() {
 		boolean text = login.getWelcomeText().isDisplayed();
 		Assert.assertTrue(text);
+		//System.out.println("Login successful");
 	}
 }
