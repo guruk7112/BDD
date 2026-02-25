@@ -96,7 +96,7 @@ public class TableStep {
 		System.out.println(list.get(2).get(1)); // guest123
 	}
 
-	// 7️⃣ API Request Body Creation
+	// 7️⃣ API Request Body CREATION!
 	@When("user sends API request with following body")
 	public void user_sends_api_request_with_following_body(DataTable dataTable) {
            Map<String,String> map=   dataTable.asMaps(String.class,String.class).get(0);
@@ -105,5 +105,6 @@ public class TableStep {
            System.out.println("name : "+map.get("name"));
            System.out.println("email : "+map.get("email"));
            System.out.println("role : "+map.get("role"));
+         
 	}
 }

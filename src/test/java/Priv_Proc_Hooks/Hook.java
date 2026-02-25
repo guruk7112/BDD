@@ -3,29 +3,20 @@ package Priv_Proc_Hooks;
 import java.io.IOException;
 import java.time.Duration;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.Parameters;
 
 import Priv_Proc_Driver.DriverManage;
 import Priv_Proc_FileUtility.FileUtility;
 import Priv_proc_ObjectRepositery.LoginPage;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
 public class Hook {
 
-//	Hooks are controlled using:
-//
-//		@Before("@tag")
-//
-//		@After("@tag")
-//
-//		@Before("not @tag")
-//
-//		@After("not @tag") etc..,
 
 	FileUtility fu=new FileUtility();
 	WebDriver driver;
@@ -45,9 +36,13 @@ public class Hook {
         login.getLoginBtn().click();
 	}
 	@After ()
-	public void configAf() {
-		if (DriverManage.getDriver() != null) {
-			DriverManage.getDriver().quit();
+	public void configAf(Scenario scenario) {
+		
+		if(scenario.isFailed()) {
+			TakesScreenshot ts=(TakesScreenshot)driver;
+		byte[] screen=	ts.getScreenshotAs(OutputType.BYTES);
+		scenario.attach(screen, "image/png", scenario.getName());
 		}
+		DriverManage.getDriver().quit();
 	}
 }

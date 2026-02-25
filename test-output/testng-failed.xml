@@ -6,8 +6,8 @@
       <class name="Priv_Proc_RunnerClass.Runner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
         </methods>
       </class> <!-- Priv_Proc_RunnerClass.Runner -->
     </classes>

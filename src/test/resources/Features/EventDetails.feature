@@ -7,7 +7,7 @@ And select the rfq from the options
 When buyer clicks on create from blank
 Then the event details section should be displayed
 
-
+@demo
 Scenario: verify urgent event
 Given when the buyer scroll to event settings section
 When buyer clicks on urgent event checkbox
